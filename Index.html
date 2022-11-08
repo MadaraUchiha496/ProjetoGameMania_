@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Fábio Aurélio Guzzi - Curso Front-End Senai">
+    <title>Game Mania</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+     
+<body>  
+
+    <header>
+        <div class="container-xl"> <!-- CONTAINER -->
+            <img class="logo" src="./images/vGame.png" alt=""> <!-- IMAGEM1 CABEÇALHO -->
+
+            <img class="img" src="/images/logoGame.png" alt=""> <!-- IMAGEM2 CABEÇALHO -->
+
+            <img onclick="mostraMenu()" class="hamburger" src="./images/hamb.png" alt="Menu hamburger"> <!-- MENU HAMBURGER -->
+
+            <nav class="menu" id="navMenu"> <!-- MENU PRINCIPAL -->
+                <a class="item" href="#">Home</a>
+                <a class="item" href="#">Games</a> 
+                <a class="item" href="#">Consoles</a>
+                <a class="item" href="#">Informatica</a>
+                <a class="item" href="#">Curiosidades</a>
+                <a class="item" href="login.html">Meu Carrinho</a>
+                <input class="pesquisa" autocomplete="off" type="text" placeholder="O que você procura?">
+            </nav>
+        </div>
+    </header>
+
+    <section> <!-- MOSTRUÁRIO DE ALGUNS PRODUTOS -->
+        <h1 class="anuncio">Conheça nossos produtos</h1>
+    </section>
+
+    <main>
+        <div class="container"> <!-- CONTAINER COM UMA LINHA E TRES COLUNAS -->
+            <div class="row1"> <!-- LINHA ÚNICA -->
+                <div class="col"> <!-- PRIMEIRA COLUNA -->
+                    <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active" data-bs-interval="2500">
+                                <img class="imx" src="./images/console1.jpg" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item" data-bs-interval="2000">
+                                <img class="imx" src="./images/console2.jpg" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item" data-bs-interval="2000">
+                                <img class="imx" src="./images/console3.jpg" class="d-block w-100" alt="...">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="col"> <!-- SEGUNDA COLUNA -->
+                    <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active" data-bs-interval="2500">
+                                <img class="imx" src="./images/celular1.jpg" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item" data-bs-interval="2000">
+                                <img class="imx" src="./images/celular2.jpg" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item" data-bs-interval="2000">
+                                <img class="imx" src="./images/celular3.jpg" class="d-block w-100" alt="...">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="col"> <!-- TERCEIRA COLUNA -->
+                    <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active" data-bs-interval="2500">
+                                <img class="imx" src="./images/game1.jpg" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item" data-bs-interval="2000">
+                                <img class="imx" src="./images/game2.jpg" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item" data-bs-interval="2000">
+                                <img class="imx" src="./images/game3.jpg" class="d-block w-100" alt="...">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+                </div>
+            </div>
+         </div>
+    </main>
+    
+    <section> <!-- PRINCIPAIS OFERTAS -->
+        <h1 class="ofertas">Ofertas do mês ! Acesse e confira !</h1>
+    </section>
+
+    <div class="container2 text-center"> <!-- CONTAINER -->
+        <div class="row row-cols-2">
+            <div class="col-6 col-md-6 col-lg-3"> <!-- COLUNA 1 -->
+                <div class="card" style="width: 12rem;">
+                    <img src="./images/oferta1.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                    <p class="card-text">A vista - 50% off</p> 
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-md-6 col-lg-3"> <!-- COLUNA 2 -->
+                <div class="card" style="width: 12rem;">
+                    <img src="./images/oferta2.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                    <p class="card-text">A vista 30% off</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-md-6 col-lg-3"> <!-- COLUNA 3 -->
+                <div class="card" style="width: 12rem;">
+                    <img src="./images/oferta3.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                    <p class="card-text">A vista 30% off</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-md-6 col-lg-3"> <!-- COLUNA 4 -->
+                <div class="card" style="width: 12rem;">
+                    <img src="./images/oferta4.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                    <p class="card-text">A vista 20% off</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-md-6 col-lg-3"> <!-- COLUNA 5 -->
+                <div class="card" style="width: 12rem;">
+                    <img src="./images/oferta5.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                    <p class="card-text">A vista 20% off</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-md-6 col-lg-3"> <!-- COLUNA 6 -->
+                <div class="card" style="width: 12rem;">
+                    <img src="./images/oferta6.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                    <p class="card-text">A vista 10% off</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-md-6 col-lg-3"> <!-- COLUNA 7 -->
+                <div class="card" style="width: 12rem;">
+                    <img src="./images/oferta7.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                    <p class="card-text">A vista 10% off</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-md-6 col-lg-3"> <!-- COLUNA 8 -->
+                <div class="card" style="width: 12rem;">
+                    <img src="./images/oferta8.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <p class="card-text">A vista 10% off</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="redes">
+        <a href="https://www.instagram.com/">
+            <img class="image" src="./images/insta.png">
+        </a> 
+        <a href="https://pt-br.facebook.com/">
+            <img class="image" src="./images/face.png">
+        </a> 
+        <a href="https://www.whatsapp.com/">
+            <img class="image" src="./images/whatsapp.png">
+        </a> 
+        </div>
+
+        <div class="endereco">
+            <p>Av. São Paulo, 1234 - Centro - Araraquara / Tel.: (16) 3333-2222</p>
+            
+            <a href="mailto:gamemania@yahoo.com"> /e-mail:gamemania@yahoo.com</a>
+
+            <img clas="cartao" src="./images/cartoes.png" alt="">
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./js/script.js"></script>
+
+</body>
+</html>
